@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enzo Jouve</title>
+    <script src="../scripts/fasterThemeLoader.js"></script>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/projets.css">
+</head>
+
+<body>
+    <nav>
+        <div class="menu-container-gauche">
+            <a data-i18n="nav_apropos" href="./apropos.html" class="menu-item-gauche">A propos</a>
+            <a data-i18n="nav_cursus" href="./cursus.html" class="menu-item-gauche">Cursus</a>
+            <a data-i18n="nav_savoir" href="./savoir.html" class="menu-item-gauche">Savoir</a>
+            <a data-i18n="nav_projets" href="./projets.html" class="menu-item-gauche">Projets</a>
+            <a data-i18n="nav_documents" href="./documents.html" class="menu-item-gauche">CV</a>
+        </div>
+        <div class="menu-container-haut">
+            <a data-i18n="nav_apropos" href="./apropos.html" class="menu-item-haut">A propos</a>
+            <a data-i18n="nav_cursus" href="./cursus.html" class="menu-item-haut">Cursus</a>
+            <a data-i18n="nav_savoir" href="./savoir.html" class="menu-item-haut">Savoir</a>
+            <a data-i18n="nav_projets" href="./projets.html" class="menu-item-haut">Projets</a>
+            <a data-i18n="nav_documents" href="./documents.html" class="menu-item-haut">CV</a>
+        </div>
+        <div class="menu-container-cercle">
+            <a href="../index.html" class="menu-item-cercle"></a>
+            <a href="../index.html" class="menu-item-cercle"></a>
+            <a href="../index.html" class="menu-item-cercle"></a>
+            <a href="../index.html" class="menu-item-cercle"></a>
+            <a href="../index.html" class="menu-item-cercle"></a>
+        </div>
+    </nav>
+
+    <svg class="hide-svg" width="200" height="40">
+        <rect width="200" height="40" fill="rgba(var(--color-background), 1)" />
+    </svg>
+
+    <div class="main">
+        <!-- Contenu principal -->
+
+        <!-- Barre de personnalisation -->
+        <div class="toolbar">
+            <div id="bouton-personnalisation">
+                <button id="light-dark-btn" aria-label="Changer le thème" title="Changer le thème"></button>
+
+                <button id="lang-switch"></button>
+
+                <div id="color-selector">
+                    <label for="color-toggle" class="color-button"></label>
+                    <input type="checkbox" id="color-toggle" style="display:none;">
+                    <div class="dropdown">
+                        <div data-i18n="nav_theme1" class="color-option" data-theme="default">Chaleur du Crépuscule
+                        </div>
+                        <div data-i18n="nav_theme2" class="color-option" data-theme="theme1">Brise d'Automne</div>
+                        <div data-i18n="nav_theme3" class="color-option" data-theme="theme2">Rêve de Lavande</div>
+                        <div data-i18n="nav_theme4" class="color-option" data-theme="theme3">Forêt Tropicale</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- A propos -->
+        <h1 data-i18n="projets_title">Projets</h1>
+        <section id="projets">
+            <article class="project">
+                <h2 data-i18n="projets_titreA">Projet universitaire : Skitty & Snowy</h2>
+                <h3 data-i18n="projets_title_context">Contexte :</h3>
+                <p class="summary" data-i18n="projets_resumeA1">
+                    Ce projet a été réalisé durant ma première année en BUT Informatique, dans le cadre d’un travail de
+                    groupe. L’objectif était de créer une entreprise fictive afin de mettre en pratique nos
+                    apprentissages en base de données. Nous avons imaginé une entreprise de location de skis nommée
+                    Skitty & Snowy. Le projet s’est déroulé sur plusieurs semaines et a mobilisé l’ensemble des membres
+                    de l’équipe, chacun ayant des responsabilités spécifiques.
+                </p>
+
+                <h3 data-i18n="projets_title_objectif">Objectif :</h3>
+                <p data-i18n="projets_resumeA2">
+                    Le but principal était de concevoir un site web vitrine pour notre entreprise fictive, tout en
+                    mettant en œuvre une base de données fonctionnelle pour gérer les réservations, les clients et le
+                    stock de matériel. Ce projet visait à consolider nos compétences en HTML, CSS et SQL, et à nous
+                    initier au travail collaboratif autour d’un livrable concret.
+                </p>
+
+                <h3 data-i18n="projets_title_travailrealise">Travail réalisé :</h3>
+                <p data-i18n="projets_resumeA31">
+                    J’ai travaillé principalement sur la structure et la présentation du site web. Je me suis chargé de
+                    concevoir une interface responsive et ergonomique, en veillant à ce qu’elle soit cohérente avec
+                    l’univers graphique de la marque. J’ai mis en œuvre des media queries pour que le site s’adapte
+                    aussi bien aux écrans d’ordinateur qu’aux smartphones.
+                </p>
+                <p data-i18n="projets_resumeA32">
+                    Parallèlement à l’aspect visuel, j’ai participé à la mise en place d’une base de données PostgreSQL
+                    destinée à gérer les différents aspects de l’entreprise : réservations, clients, matériel. J’ai
+                    appris à structurer une base de manière claire et à optimiser les requêtes pour de meilleures
+                    performances.
+                </p>
+                <p data-i18n="projets_resumeA33">
+                    Le travail a été réparti équitablement au sein du groupe, avec des réunions régulières pour
+                    coordonner nos avancées.
+                </p>
+
+                <h3 data-i18n="projets_title_apporte">Ce que ça m’a apporté :</h3>
+                <p data-i18n="projets_resumeA4">
+                    Ce projet m’a permis d’appliquer concrètement les notions apprises en cours, notamment en HTML, CSS
+                    et base de données. J’ai gagné en autonomie, en rigueur, et en capacité d’adaptation grâce aux
+                    contraintes du responsive design. J’ai aussi découvert l’importance de la collaboration et de la
+                    communication dans un projet de groupe. Enfin, cette expérience m’a donné une première vision
+                    concrète du développement web et de la gestion de données en contexte professionnel.
+                </p>
+
+                <p>
+                    <span data-i18n="projets_lien"></span>
+                    <a href="https://codefirst.iut.uca.fr/containers/enzojouve-sae-106-gestion-et-economie/"
+                        title="Go there" data-i18n="projets_lien_texte">
+                    </a>
+                </p>
+
+                <div class="figures">
+                    <figure>
+                        <a href="../images/skitty_snowy_home.png" target="_blank">
+                            <img src="../images/skitty_snowy_home.png" style="height: auto;"
+                                alt="Page d'accueil Skitty & Snowy" data-i18n="projets_image_accueil">
+                        </a>
+                        <figcaption data-i18n="projets_caption_accueil">Page d'accueil du site Skitty & Snowy
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="../images/database_schema.png" target="_blank">
+                            <img src="../images/database_schema.png" style="height: auto;"
+                                alt="Schéma de la base de données" data-i18n="projets_image_schema">
+                        </a>
+                        <figcaption data-i18n="projets_caption_schema">Modèle Logique de Données</figcaption>
+                    </figure>
+                </div>
+
+            </article>
+
+            <article class="project">
+                <h2 data-i18n="projets_titreB">Projet universitaire : Jeu de combat de monstres</h2>
+                <h3 data-i18n="projets_title_context">Contexte :</h3>
+                <p class="summary" data-i18n="projets_resumeB1">
+                    Ce projet a été réalisé en binôme lors de mon premier semestre du BUT. La SAÉ s’est déroulée sur un
+                    mois et le sujet consistait à développer un jeu en langage C, tout en utilisant différentes
+                    structures de données et en comparant plusieurs algorithmes classiques de tri et de recherche.
+                </p>
+
+                <h3 data-i18n="projets_title_objectif">Objectif :</h3>
+                <p data-i18n="projets_resumeB2">
+                    Nous devions concevoir un jeu dans lequel un chevalier affronte successivement deux vagues de
+                    monstres. Ce projet mettait en pratique la compétence « optimiser des applications informatiques ».
+                    Pour cela, nous avons modélisé un problème algorithmique, implémenté et comparé plusieurs
+                    algorithmes de tri (rapide, à bulle, par insertion), mis en œuvre des méthodes de recherche
+                    (séquentielle et dichotomique), et utilisé diverses structures de données telles que des listes
+                    chaînées, des piles, des files et des tableaux dynamiques.
+                </p>
+
+                <h3 data-i18n="projets_title_travailrealise">Travail réalisé :</h3>
+                <p data-i18n="projets_resumeB31">
+                    Nous avons donc développé le jeu en langage C en respectant le cahier des charges. Le joueur peut
+                    jouer une partie à partir d’un fichier prédéfini ou personnalisé, consulter la liste des joueurs
+                    triés par pseudo ou par score, et accéder aux statistiques détaillées d’un joueur.
+                </p>
+                <p data-i18n="projets_resumeB32">
+                    Côté technique, nous avons utilisé six structures de données: des structures Chevalier et
+                    MaillonScore pour gérer les joueurs et leurs scores, une structure Monstre, une pile pour la
+                    première vague de monstres, une file pour la seconde, et un tableau dynamique pour stocker
+                    efficacement les joueurs.
+                </p>
+                <p data-i18n="projets_resumeB33">
+                    Nous avons implémenté plusieurs algorithmes : tri rapide (classement par score), tri à bulle (tri
+                    alphabétique des joueurs), tri par insertion (ajout de scores), ainsi que des recherches linéaire et
+                    dichotomique.
+                </p>
+                <p data-i18n="projets_resumeB34">
+                    Enfin, de nombreux tests ont été menés pour vérifier le bon fonctionnement des fonctionnalités
+                    principales du jeu, notamment l’ajout de scores, la gestion des monstres, et la recherche de
+                    joueurs.
+                </p>
+
+                <h3 data-i18n="projets_title_apporte">Ce que ça m’a apporté :</h3>
+                <p data-i18n="projets_resumeB4">
+                    Ce projet m’a permis d’améliorer mes compétences en langage C, surtout pour utiliser différentes
+                    structures de données. J’ai appris à mieux organiser un projet, à choisir les bons algorithmes selon
+                    les besoins, et à gérer des fichiers pour sauvegarder les données. Travailler en binôme m’a aussi
+                    appris à bien communiquer et à partager les tâches. Cela m’a aidé à mieux comprendre comment rendre
+                    un programme plus efficace.
+                </p>
+
+                <p>
+                    <span data-i18n="projets_lienB"></span>
+                    <a href="https://github.com/Enkz15/MonsterKnightGame" title="Go there"
+                        data-i18n="projets_lien_texteB">
+                    </a>
+                </p>
+
+                <div class="figures">
+                    <figure>
+                        <img src="../images/exempleMKG.png" style="height: auto;" alt="Exemple d'une partie"
+                            data-i18n="projets_image_partie">
+                        <figcaption data-i18n="projets_caption_partie">Exemple d'une partie
+                        </figcaption>
+                    </figure>
+                </div>
+            </article>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-haut">
+                <p>&copy; 2025 - Enzo Jouve</p>
+                <div class="mail">
+                    <a href="mailto:enzo.jouve@etu.uca.fr" target="_blank"
+                        rel="noopener noreferrer">enzo.jouve@etu.uca.fr</a>
+                </div>
+            </div>
+            <div class="footer-bas">
+                <p data-i18n="footer_comeback">Mon site est en cours de construction, n'hésitez pas à revenir plus tard
+                    !</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/language.js"></script>
+
+</body>
+
+</html>

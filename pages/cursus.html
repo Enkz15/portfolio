@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enzo Jouve</title>
+    <script src="../scripts/fasterThemeLoader.js"></script>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/cursus.css">
+</head>
+
+<body>
+    <nav>
+        <div class="menu-container-gauche">
+            <a data-i18n="nav_apropos" href="./apropos.html" class="menu-item-gauche">A propos</a>
+            <a data-i18n="nav_cursus" href="./cursus.html" class="menu-item-gauche">Cursus</a>
+            <a data-i18n="nav_savoir" href="./savoir.html" class="menu-item-gauche">Savoir</a>
+            <a data-i18n="nav_projets" href="./projets.html" class="menu-item-gauche">Projets</a>
+            <a data-i18n="nav_documents" href="./documents.html" class="menu-item-gauche">CV</a>
+        </div>
+        <div class="menu-container-haut">
+            <a data-i18n="nav_apropos" href="./apropos.html" class="menu-item-haut">A propos</a>
+            <a data-i18n="nav_cursus" href="./cursus.html" class="menu-item-haut">Cursus</a>
+            <a data-i18n="nav_savoir" href="./savoir.html" class="menu-item-haut">Savoir</a>
+            <a data-i18n="nav_projets" href="./projets.html" class="menu-item-haut">Projets</a>
+            <a data-i18n="nav_documents" href="./documents.html" class="menu-item-haut">CV</a>
+        </div>
+        <div class="menu-container-cercle">
+            <a href="../index.html" class="menu-item-cercle"></a>
+            <a href="../index.html" class="menu-item-cercle"></a>
+            <a href="../index.html" class="menu-item-cercle"></a>
+            <a href="../index.html" class="menu-item-cercle"></a>
+            <a href="../index.html" class="menu-item-cercle"></a>
+        </div>
+    </nav>
+
+    <svg class="hide-svg" width="200" height="40">
+        <rect width="200" height="40" fill="rgba(var(--color-background)" />
+    </svg>
+
+    <div class="main">
+        <!-- Contenu principal -->
+
+        <!-- Barre de personnalisation -->
+        <div class="toolbar">
+            <div id="bouton-personnalisation">
+                <button id="light-dark-btn"></button>
+
+                <button id="lang-switch"></button>
+
+                <div id="color-selector">
+                    <label for="color-toggle" class="color-button"></label>
+                    <input type="checkbox" id="color-toggle" style="display:none;">
+                    <div class="dropdown">
+                        <div data-i18n="nav_theme1" class="color-option" data-theme="default">Chaleur du Crépuscule
+                        </div>
+                        <div data-i18n="nav_theme2" class="color-option" data-theme="theme1">Brise d'Automne</div>
+                        <div data-i18n="nav_theme3" class="color-option" data-theme="theme2">Rêve de Lavande</div>
+                        <div data-i18n="nav_theme4" class="color-option" data-theme="theme3">Forêt Tropicale</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cursus Scolaire -->
+        <section id="cursus">
+            <h1 data-i18n="cursus_title">Mon Cursus Scolaire</h1>
+
+            <div class="timeline-container">
+
+                <!-- Supérieur -->
+                <div class="timeline-block">
+                    <div class="timeline-content">
+                        <h2 data-i18n="cursus_superieur">Supérieur</h2>
+                        <h3>BUT Informatique - Aubière</h3>
+                        <p data-i18n="cursus_but_text" class="timeline-text">
+                            Le B.U.T. Informatique est un diplôme national, constitué d'enseignements et d'activités
+                            encadrées, de travaux en groupes encadrés sur des projets et enfin de mises en situations
+                            professionnelles à travers 26 semaines de stage ou d'alternance en entreprise.
+                        </p>
+                        <p style="color: black;">
+                            <span data-i18n="cursus_but_address"></span> :
+                            <a href="https://www.google.com/maps/place/IUT+Clermont+Auvergne/@45.761892,3.108376,159m/data=!3m2!1e3!5s0x47f71c7155368aab:0xd70b9b8ef58d6cad!4m6!3m5!1s0x47f71c7421c59dcb:0xed3163e302041b84!8m2!3d45.7618053!4d3.1086735!16s%2Fg%2F1ylhldxsh?entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoASAFQAw%3D%3D"
+                                title="Go there" data-i18n="cursus_but_link">
+                                5 Av. Blaise Pascal - 63170 Aubière
+                            </a>
+                        </p>
+
+                    </div>
+                    <div class="timeline-image">
+                        <img src="../images/photo_but.jpg" title="BUT Info" alt="Photo du BUT Info">
+                    </div>
+                </div>
+
+                <!-- Lycée -->
+                <div class="timeline-block">
+                    <div class="timeline-content">
+                        <h2 data-i18n="cursus_lycee">Lycée</h2>
+                        <h3>René Descartes</h3>
+                        <p data-i18n="cursus_lycee_text" class="timeline-text">
+                            Le lycée René DESCARTES de COURNON D'AUVERGNE est un lycée d'enseignement général et
+                            technologique qui a ouvert ses portes en 1995.
+                        </p>
+                        <p data-i18n="cursus_lycee_text2" class="timeline-text">
+                            Obtention baccalauréat avec mention. Spécialités mathématiques et physique-chimie.
+                        <p style="color: black;">
+                            <span data-i18n="cursus_lycee_address"></span> :
+                            <a href="https://www.google.com/maps/place/Lyc%C3%A9e+Ren%C3%A9+Descartes/@45.744025,3.2113587,379m/data=!3m1!1e3!4m6!3m5!1s0x47f6e2f67af5cd1b:0x2de1cfc6d8547df8!8m2!3d45.743811!4d3.2114253!16s%2Fg%2F1vd3v4fd?entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+                                title="Go there" data-i18n="cursus_lycee_link">
+                                Av. Jules Ferry - 63800 Cournon-d'Auvergne
+                            </a>
+                        </p>
+
+                    </div>
+                    <div class="timeline-image">
+                        <img src="../images/photo_lycee.jpg" title="Lycée René Descartes"
+                            alt="Photo du lycée René Descartes">
+                    </div>
+                </div>
+
+                <!-- Collège -->
+                <!-- <div class="timeline-block">
+                    <div class="timeline-content">
+                        <h2 data-i18n="cursus_college">Collège</h2>
+                        <h3>Jean Rostand</h3>
+                        <p data-i18n="cursus_college_text" class="timeline-text">
+                            Implanté sur la jolie commune des Martres de Veyre, le collège Jean Rostand est niché au
+                            cœur de vastes espaces verts et bénéficie des équipements sportifs proches (gymnase,
+                            terrains de sport). Il a été rénové et agrandi en 2000 et 2011. Un matériel performant et
+                            renouvelé régulièrement permet de développer les usages pédagogiques du numérique :
+                            vidéoprojection, utilisation des tableaux interactifs, manuels numériques…
+                        </p>
+                        <p style="color: black;">
+                            <span data-i18n="cursus_college_address"></span> :
+                            <a href="https://www.google.com/maps/place/Coll%C3%A8ge+Jean+Rostand/@45.6952187,3.1973209,380m/data=!3m1!1e3!4m15!1m8!3m7!1s0x47f6fd471345c9a7:0xb300a6b7223ac25c!2s50+Rue+de+la+Garenne,+63730+Les+Martres-de-Veyre!3b1!8m2!3d45.6948009!4d3.1977661!16s%2Fg%2F11nm_pj3ts!3m5!1s0x47f6fd690b5c18eb:0xd2504fc369eeec25!8m2!3d45.6942803!4d3.1978998!16s%2Fg%2F11fd67xxxd?entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+                                title="Go there" data-i18n="cursus_college_link">
+                                52 rue Jean Zay - 63730 Les Martres de Veyre
+                            </a>
+                        </p>
+
+                    </div>
+                    <div class="timeline-image">
+                        <img src="../images/photo_college.png" title="Collège Jean Rostand"
+                            alt="Photo du collège Jean Rostand">
+                    </div>
+                </div> -->
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-haut">
+                <p>&copy; 2025 - Enzo Jouve</p>
+                <div class="mail">
+                    <a href="mailto:enzo.jouve@etu.uca.fr" target="_blank"
+                        rel="noopener noreferrer">enzo.jouve@etu.uca.fr</a>
+                </div>
+            </div>
+            <div class="footer-bas">
+                <p data-i18n="footer_comeback">Mon site est en cours de construction, n'hésitez pas à revenir plus tard
+                    !</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/language.js"></script>
+
+</body>
+
+</html>

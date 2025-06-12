@@ -1,0 +1,29 @@
+#documents {
+    text-align: center;
+}
+
+#documents p {
+    font-size: 1.2em;
+    color: rgba(var(--color-text));
+    margin-top: -2em;
+}
+
+#boutonCV {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    color: rgba(var(--color-border));
+    background-color: rgba(var(--color3));
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#boutonCV:hover {
+    background-color: rgba(var(--color4));
+    transform: scale(1.05);
+}
+
+/* ******************************* Responsive **************************** */
+

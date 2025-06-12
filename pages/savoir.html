@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enzo Jouve</title>
+    <script src="../scripts/fasterThemeLoader.js"></script>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/savoir.css">
+</head>
+
+<body>
+    <nav>
+        <div class="menu-container-gauche">
+            <a data-i18n="nav_apropos" href="./apropos.html" class="menu-item-gauche">A propos</a>
+            <a data-i18n="nav_cursus" href="./cursus.html" class="menu-item-gauche">Cursus</a>
+            <a data-i18n="nav_savoir" href="./savoir.html" class="menu-item-gauche">Savoir</a>
+            <a data-i18n="nav_projets" href="./projets.html" class="menu-item-gauche">Projets</a>
+            <a data-i18n="nav_documents" href="./documents.html" class="menu-item-gauche">CV</a>
+        </div>
+        <div class="menu-container-haut">
+            <a data-i18n="nav_apropos" href="./apropos.html" class="menu-item-haut">A propos</a>
+            <a data-i18n="nav_cursus" href="./cursus.html" class="menu-item-haut">Cursus</a>
+            <a data-i18n="nav_savoir" href="./savoir.html" class="menu-item-haut">Savoir</a>
+            <a data-i18n="nav_projets" href="./projets.html" class="menu-item-haut">Projets</a>
+            <a data-i18n="nav_documents" href="./documents.html" class="menu-item-haut">CV</a>
+        </div>
+        <div class="menu-container-cercle">
+            <a href="../index.html" class="menu-item-cercle"></a>
+            <a href="../index.html" class="menu-item-cercle"></a>
+            <a href="../index.html" class="menu-item-cercle"></a>
+            <a href="../index.html" class="menu-item-cercle"></a>
+            <a href="../index.html" class="menu-item-cercle"></a>
+        </div>
+    </nav>
+
+    <svg class="hide-svg" width="200" height="40">
+        <rect width="200" height="40" fill="rgba(var(--color-background)" />
+    </svg>
+
+    <div class="main">
+        <!-- Contenu principal -->
+
+        <!-- Barre de personnalisation -->
+        <div class="toolbar">
+            <div id="bouton-personnalisation">
+                <button id="light-dark-btn"></button>
+
+                <button id="lang-switch"></button>
+
+                <div id="color-selector">
+                    <label for="color-toggle" class="color-button"></label>
+                    <input type="checkbox" id="color-toggle" style="display:none;">
+                    <div class="dropdown">
+                        <div data-i18n="nav_theme1" class="color-option" data-theme="default">Chaleur du Crépuscule
+                        </div>
+                        <div data-i18n="nav_theme2" class="color-option" data-theme="theme1">Brise d'Automne</div>
+                        <div data-i18n="nav_theme3" class="color-option" data-theme="theme2">Rêve de Lavande</div>
+                        <div data-i18n="nav_theme4" class="color-option" data-theme="theme3">Forêt Tropicale</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Competences -->
+        <section id="competence">
+            <h1 data-i18n="competence_title">Mes Compétences</h1>
+            <div class="skills-grid">
+                <!-- Base de Données -->
+                <div class="skill-row">
+                    <div class="skill-icons">
+                        <img src="../images/postgresql_logo.png" alt="PostgreSQL" class="clickable-skill"
+                            data-title="PostgreSQL"
+                            data-description="Système de gestion de base de données relationnelle, robuste et open-source.<br><br><strong>Connaissance : </strong>Bonne compréhension des requêtes SQL, création de tables, et manipulations de données.">
+                    </div>
+                    <div data-i18n="competence_bdd" class="skill-domain">Base de Données</div>
+                </div>
+
+                <hr class="separator">
+
+                <!-- Programmation -->
+                <div class="skill-row">
+                    <div data-i18n="competence_prog" class="skill-domain">Programmation</div>
+                    <div class="skill-icons">
+                        <img src="../images/c_logo.png" alt="C" class="clickable-skill" data-title="C"
+                            data-description="Langage bas niveau performant, utilisé pour la programmation système et embarquée.<br><br><strong>Connaissance : </strong>Maîtrise des bases : variables, pointeurs, conditions, boucles, et fonctions.">
+                        <img src="../images/cpp_logo.png" alt="C++" class="clickable-skill" data-title="C++"
+                            data-description="Extension du C orientée objet, utilisée pour les applications complexes et performantes.<br><br><strong>Connaissance : </strong>Découverte de la programmation orientée objet, classes et héritage.">
+                        <img src="../images/csharp_logo.png" alt="C#" class="clickable-skill" data-title="C#"
+                            data-description="Langage moderne développé par Microsoft, idéal pour les applications Windows et le développement .NET.<br><br><strong>Connaissance :</strong> Découverte de la syntaxe C# et des concepts fondamentaux. Développement d'un jeu en console et avec interfaces graphiques.">
+                        <img src="../images/python_logo.png" alt="Python" class="clickable-skill" data-title="Python"
+                            data-description="Langage polyvalent, simple à apprendre, utilisé en IA, data, web et scripting.<br><br><strong>Connaissance :</strong> Utilisation de bibliothèques comme matplotlib pour tracer et exploiter des graphiques à partir de données.">
+                    </div>
+                </div>
+
+                <hr class="separator">
+
+                <!-- Développement Web -->
+                <div class="skill-row">
+                    <div class="skill-icons">
+                        <img src="../images/html_logo.png" alt="HTML" class="clickable-skill" data-title="HTML"
+                            data-description="Langage de balisage structurant le contenu des pages web.<br><br><strong>Connaissance :</strong>Capable de structurer une page web avec balises">
+                        <img src="../images/css_logo.png" alt="CSS" class="clickable-skill" data-title="CSS"
+                            data-description="Langage de style pour définir l’apparence visuelle des pages HTML.<br><br><strong>Connaissance :</strong>Connaissances en mise en forme, flexbox et responsive design.">
+                    </div>
+                    <div data-i18n="competence_web" class="skill-domain">Développement Web</div>
+                </div>
+
+                <hr class="separator">
+
+                <!-- Systèmes -->
+                <div class="skill-row">
+                    <div data-i18n="competence_systeme" class="skill-domain">Système</div>
+                    <div class="skill-icons">
+                        <img src="../images/linux_logo.png" alt="Linux" class="clickable-skill" data-title="Linux"
+                            data-description="Système d'exploitation open-source, stable et utilisé en administration système et serveurs.<br><br><strong>Connaissance :</strong>Utilisation de base du terminal, commandes essentielles, administration et navigation dans le système.">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="skill-popup" id="skillPopup">
+            <div class="skill-popup-content">
+                <h2 id="popupTitle"></h2>
+                <p id="popupDescription"></p>
+                <button class="skill-popup-close" onclick="closePopup()">Fermer</button>
+            </div>
+        </div>
+
+        <!-- Qualités -->
+        <section id="qualites" class="section-qualites">
+            <h1 data-i18n="competence_qualite_title">Qualités</h1>
+            <article class="qualite">
+                <h2 data-i18n="competence_qualite_patience" class="titre-qualite">Patience</h2>
+                <div class="img-skill patience" title="Patient"></div>
+
+                <div class="contenu-qualite">
+                    <p data-i18n="competence_qualite_patience_text1">Je suis une personne patiente. Depuis le collège,
+                        j'apporte mon aide à une personne de mon
+                        entourage dans l'enseignement de manière ponctuelle, ce qui m'a permis de donner des cours à des
+                        élèves de CE2, en particulier en mathématiques. Cette expérience a affiné ma patience et ma
+                        pédagogie, face au jeune âge des élèves et à la complexité des notions mathématiques.</p>
+                    <p data-i18n="competence_qualite_patience_text2">En milieu professionnel, cette qualité me sera
+                        précieuse pour établir de bonnes relations avec
+                        mes collaborateurs et, en cas de difficultés, rester serein et aborder les problèmes de manière
+                        efficace et réfléchie.</p>
+                </div>
+            </article>
+
+            <article class="qualite">
+                <h2 data-i18n="competence_qualite_creativite" class="titre-qualite">Créativité</h2>
+                <div class="img-skill creative" title="Créatif"></div>
+
+                <div class="contenu-qualite">
+                    <p data-i18n="competence_qualite_creativite_text1">Je suis une personne créative. Cette créativité
+                        s'est développée au fil des années, notamment
+                        grâce à mon intérêt pour la pâtisserie. Dès que j’ai commencé à cuisiner, j'ai pris plaisir à
+                        tester une multitude de recettes et, rapidement, j'ai eu envie d'aller au-delà des instructions.
+                    </p>
+                    <p data-i18n="competence_qualite_creativite_text2">En entreprise, cette créativité me permet
+                        d’aborder les projets avec un regard neuf, d’imaginer
+                        des solutions originales et de rester flexible face aux imprévus.</p>
+                </div>
+            </article>
+
+            <article class="qualite">
+                <h2 data-i18n="competence_qualite_organisation" class="titre-qualite">Organisation</h2>
+                <div class="img-skill organized" title="Organisé"></div>
+
+                <div class="contenu-qualite">
+                    <p data-i18n="competence_qualite_organisation_text1">Je suis une personne organisée. Mon sens de
+                        l’organisation s’est renforcé au fil des années,
+                        particulièrement avec la préparation au baccalauréat, où la gestion du temps est devenue
+                        essentielle. J’utilise notamment des outils comme Notion pour planifier mes journées.</p>
+                    <p data-i18n="competence_qualite_organisation_text2">En entreprise, cette organisation m’aidera à
+                        structurer les projets, respecter les délais et
+                        garantir un travail de qualité.</p>
+                </div>
+            </article>
+
+            <article class="qualite">
+                <h2 data-i18n="competence_qualite_ouverture" class="titre-qualite">Ouvert d'esprit</h2>
+                <div class="img-skill openminded" title="Ouvert d’esprit"></div>
+
+                <div class="contenu-qualite">
+                    <p data-i18n="competence_qualite_ouverture_text1">Je suis une personne ouverte d'esprit, une qualité
+                        que j’ai développée en restant curieux et
+                        attentif aux autres. Mes voyages ont beaucoup contribué à cela, chaque destination m'ayant
+                        permis de découvrir des modes de vie différents.</p>
+                    <p data-i18n="competence_qualite_ouverture_text2">En entreprise, elle me permet de collaborer plus
+                        efficacement, d’accepter et de tirer profit des
+                        critiques constructives, et d’apporter des solutions innovantes inspirées par cette diversité de
+                        points de vue.</p>
+                </div>
+            </article>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-haut">
+                <p>&copy; 2025 - Enzo Jouve</p>
+                <div class="mail">
+                    <a href="mailto:enzo.jouve@etu.uca.fr" target="_blank"
+                        rel="noopener noreferrer">enzo.jouve@etu.uca.fr</a>
+                </div>
+            </div>
+            <div class="footer-bas">
+                <p data-i18n="footer_comeback">Mon site est en cours de construction, n'hésitez pas à revenir plus tard
+                    !</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/language.js"></script>
+    <script>
+        const skillImages = document.querySelectorAll('.clickable-skill');
+        const popup = document.getElementById('skillPopup');
+        const popupTitle = document.getElementById('popupTitle');
+        const popupDescription = document.getElementById('popupDescription');
+
+        skillImages.forEach(img => {
+            img.addEventListener('click', () => {
+                popupTitle.textContent = img.getAttribute('data-title');
+                popupDescription.innerHTML = img.getAttribute('data-description');
+                popup.style.display = 'flex';
+            });
+        });
+
+        function closePopup() {
+            popup.style.display = 'none';
+        }
+
+        window.addEventListener('click', e => {
+            if (e.target === popup) {
+                closePopup();
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

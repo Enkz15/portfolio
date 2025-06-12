@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Noto+Sans+JP:wght@100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&family=Rouge+Script&display=swap');
+
+/* ==================== Variables de couleur ==================== */
+
+:root {
+    --color-background: 18, 18, 18;
+    --color-text: 234, 234, 234;
+    --color-border: 255, 255, 255;
+    --color1: 236, 204, 133;
+    --color2: 231, 180, 52;
+    --color3: 222, 139, 52;
+    --color4: 232, 100, 54;
+    --color5: 130, 53, 43;
+    --image-lune: url('../images/lune-white.png');
+    --image-palette: url('../images/palette-white.png');
+}
+
+/* -------------------------------------------------------------------------------
+   ---------------------------------   Général   ---------------------------------
+   ------------------------------------------------------------------------------- */
+* :not(body):not(svg) {
+    transition: background-color 0s, color 0s;
+}
+
+html,
+body {
+    height: 100%;
+    margin-left: 0;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    background-color: rgba(var(--color-background));
+    font-size: 1em;
+    color: rgba(var(--color-text));
+    font-family: 'Quantico', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+    margin-left: 12em;
+    margin-top: 5em;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-family: 'Rouge Script', cursive;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+/* -------------------------------------------------------------------------------
+   ---------------------------------   Liens   ---------------------------------
+   ------------------------------------------------------------------------------- */
+.main a:link,
+footer a:link {
+    color: rgba(var(--color4));
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main a:visited,
+footer a:visited {
+    color: rgba(var(--color5));
+    text-decoration: none;
+    font-style: italic;
+}
+
+.main a:hover,
+footer a:hover {
+    color: rgba(var(--color2));
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.main a:active,
+footer a:active {
+    color: rgba(var(--color5));
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/* -------------------------------------------------------------------------------
+   -------------------------   Boutons Personnalisation   ------------------------
+   ------------------------------------------------------------------------------- */
+
+.toolbar {
+    position: absolute;
+    top: 11em;
+    right: 1em;
+    z-index: 9999;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1em;
+    background: transparent;
+    pointer-events: auto;
+}
+
+#bouton-personnalisation {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-end;
+    width: fit-content;
+}
+
+#light-dark-btn,
+#lang-switch {
+    width: 3em;
+    height: 3em;
+    border-style: solid;
+    border-color: rgba(var(--color-text));
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1em;
+    background-color: rgba(var(--color-background));
+}
+
+#light-dark-btn {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: var(--image-lune);
+}
+
+#lang-switch {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#color-selector {
+    display: inline-flex;
+    align-items: center;
+}
+
+#color-selector>#color-toggle {
+    display: none;
+}
+
+#color-selector>.dropdown {
+    display: none;
+    flex-direction: column;
+    pointer-events: cursor;
+    order: 1;
+    margin-right: 0.5em;
+    background: rgba(var(--color-background));
+    border-style: solid;
+    border-color: rgba(var(--color-text));
+    gap: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.2);
+}
+
+#color-selector .color-button {
+    order: 2;
+    width: 2.9em;
+    height: 2.9em;
+    border-width: 0.1em;
+    border-style: solid;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1em;
+    background-color: rgba(var(--color-background));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: var(--image-palette);
+}
+
+
+.color-option {
+    cursor: pointer;
+    font-size: 1em;
+    padding: 0.3em;
+}
+
+.color-option:hover {
+    background-color: rgba(var(--color5));
+    border-radius: 10%;
+}
+
+#color-selector>#color-toggle:checked~.dropdown {
+    display: flex;
+}
+
+@media (max-width: 1000px) {
+    .toolbar {
+        top: 10.5em;
+        right: 0.5em;
+    }
+
+    #bouton-personnalisation {
+        flex-direction: row-reverse;
+    }
+
+    #color-selector>.dropdown {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 550px) {
+
+    #color-selector>.dropdown {
+        flex-direction: column;
+    }
+}
+
+/* ===============================================================================
+   ===============================   Navigation   ================================
+   =============================================================================== */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Gauche ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.menu-container-gauche {
+    position: fixed;
+    top: 0;
+    left: 2.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu-item-gauche {
+    width: 1.4em;
+    min-width: 25px;
+    height: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 1em;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: -0.3em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item-gauche:nth-child(5) {
+    background: rgba(var(--color1));
+    border-left: 0.1vw solid rgba(var(--color-border));
+    border-right: 0.1vw solid rgba(var(--color-border));
+}
+
+.menu-item-gauche:nth-child(4) {
+    background: rgba(var(--color2));
+    border-left: 0.1vw solid rgba(var(--color-border));
+}
+
+.menu-item-gauche:nth-child(3) {
+    background: rgba(var(--color3));
+    border-left: 0.1vw solid rgba(var(--color-border));
+}
+
+.menu-item-gauche:nth-child(2) {
+    background: rgba(var(--color4));
+    border-left: 0.1vw solid rgba(var(--color-border));
+}
+
+.menu-item-gauche:nth-child(1) {
+    background: rgba(var(--color5));
+    border-left: 0.1vw solid rgba(var(--color-border));
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Haut ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.menu-container-haut {
+    position: relative;
+    top: 2em;
+    left: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu-item-haut {
+    width: 100%;
+    height: 2.4vh;
+    min-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.menu-item-haut:nth-child(5) {
+    background: rgba(var(--color1));
+    border-top: 0.1vw solid rgba(var(--color-border));
+    border-bottom: 0.1vw solid rgba(var(--color-border));
+}
+
+.menu-item-haut:nth-child(4) {
+    background: rgba(var(--color2));
+    border-top: 0.1vw solid rgba(var(--color-border));
+}
+
+.menu-item-haut:nth-child(3) {
+    background: rgba(var(--color3));
+    border-top: 0.1vw solid rgba(var(--color-border));
+}
+
+.menu-item-haut:nth-child(2) {
+    background: rgba(var(--color4));
+    border-top: 0.1vw solid rgba(var(--color-border));
+}
+
+.menu-item-haut:nth-child(1) {
+    background: rgba(var(--color5));
+    border-top: 0.1vw solid rgba(var(--color-border));
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Cercle ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.menu-container-cercle {
+    position: absolute;
+    left: 7em;
+    top: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.menu-item-cercle {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgba(var(--color-border));
+    border: 0.1vw solid rgba(var(--color-border));
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.menu-item-cercle:nth-child(1) {
+    background: rgba(var(--color5));
+    width: 13em;
+    height: 13em;
+    min-width: 70px;
+    min-height: 70px;
+    z-index: 1;
+}
+
+.menu-item-cercle:nth-child(2) {
+    background: rgba(var(--color4));
+    width: 10em;
+    height: 10em;
+    min-width: 70px;
+    min-height: 70px;
+    z-index: 2;
+}
+
+.menu-item-cercle:nth-child(3) {
+    background: rgba(var(--color3));
+    width: 7em;
+    height: 7em;
+    min-width: 50px;
+    min-height: 50px;
+    z-index: 3;
+}
+
+.menu-item-cercle:nth-child(4) {
+    background: rgba(var(--color2));
+    width: 4em;
+    height: 4em;
+    min-width: 30px;
+    min-height: 30px;
+    z-index: 4;
+}
+
+.menu-item-cercle:nth-child(5) {
+    background: rgba(var(--color1));
+    width: 1em;
+    height: 1em;
+    min-width: 10px;
+    min-height: 10px;
+    z-index: 5;
+}
+
+/* ******************************* Responsive **************************** */
+@media (max-width: 1000px) {
+    .menu-container-gauche {
+        display: none;
+    }
+
+    .menu-container-cercle {
+        left: 0;
+    }
+
+    .menu-container-haut {
+        left: 0;
+    }
+
+    .main {
+        margin-left: 1em;
+    }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Cache pour le body ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.hide-svg {
+    position: absolute;
+    top: 0;
+    left: 2em;
+}
+
+@media (max-width: 1000px) {
+    .hide-svg {
+        display: none;
+    }
+}
+
+/* -----------------------------------------------------------------------------
+ ---------------------------------   Footer   ----------------------------------
+ ------------------------------------------------------------------------------- */
+
+/* ////////////////////////////////////////////
+   FOOTER ET COPYRIGHT
+//////////////////////////////////////////// */
+footer {
+    background-color: rgba(var(--color5));
+    color: rgba(var(--color-text));
+    border-top: rgba(var(--color-border)) solid 1px;
+    text-align: center;
+    margin-top: 6em;
+    padding: 10px 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0em;
+    width: 100%;
+}
+
+.footer-haut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.footer-bas {
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+}

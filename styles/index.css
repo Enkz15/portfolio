@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Noto+Sans+JP:wght@100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&family=Rouge+Script&display=swap');
+
+/* ==================== Variables de couleur ==================== */
+
+:root {
+    --color-background: 18, 18, 18; /* #eae1d8 */
+    --color-text: 234, 234, 234; /* #1d1d1d */
+    --color-border: 255, 255, 255; /* #ffffff */
+    --color1: 236, 204, 133; /* #eccc85 */
+    --color2: 231, 180, 52; /* #e7b434 */
+    --color3: 222, 139, 52; /* #de8b34 */
+    --color4: 232, 100, 54; /* #e86436 */
+    --color5: 130, 53, 43; /* #82352b */
+}
+
+/* -------------------------------------------------------------------------------
+   ---------------------------------   Général   ---------------------------------
+   ------------------------------------------------------------------------------- */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.main {
+    margin: 0;
+    padding: 0;
+}
+
+#index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Rouge Script', cursive;
+    font-size: 7em;
+    background: linear-gradient(to right, rgba(var(--color1)), rgba(var(--color3)));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1em;
+    margin-bottom: 5em;
+    color: rgba(var(--color-text), 0.9);
+}
+
+.menu-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 3em;
+    margin: 0;
+    padding: 0;
+}
+
+#lang-switch {
+    width: 3em;
+    height: 3em;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgba(var(--color-background));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: absolute;
+    right: 49%;
+    bottom: 2em;
+}
+
+@media (max-width: 1000px) {
+    .toolbar {
+        top: 10.5em;
+        right: 0.5em;
+    }
+
+    #bouton-personnalisation {
+        flex-direction: row-reverse;
+    }
+
+    #color-selector>.dropdown {
+        flex-direction: row;
+    }
+}

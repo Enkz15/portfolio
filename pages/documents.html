@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enzo Jouve</title>
+    <script src="../scripts/fasterThemeLoader.js"></script>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/documents.css">
+</head>
+
+<body>
+    <nav>
+        <div class="menu-container-gauche">
+            <a data-i18n="nav_apropos" href="./apropos.html" class="menu-item-gauche">A propos</a>
+            <a data-i18n="nav_cursus" href="./cursus.html" class="menu-item-gauche">Cursus</a>
+            <a data-i18n="nav_savoir" href="./savoir.html" class="menu-item-gauche">Savoir</a>
+            <a data-i18n="nav_projets" href="./projets.html" class="menu-item-gauche">Projets</a>
+            <a data-i18n="nav_documents" href="./documents.html" class="menu-item-gauche">CV</a>
+        </div>
+        <div class="menu-container-haut">
+            <a data-i18n="nav_apropos" href="./apropos.html" class="menu-item-haut">A propos</a>
+            <a data-i18n="nav_cursus" href="./cursus.html" class="menu-item-haut">Cursus</a>
+            <a data-i18n="nav_savoir" href="./savoir.html" class="menu-item-haut">Savoir</a>
+            <a data-i18n="nav_projets" href="./projets.html" class="menu-item-haut">Projets</a>
+            <a data-i18n="nav_documents" href="./documents.html" class="menu-item-haut">CV</a>
+        </div>
+        <div class="menu-container-cercle">
+            <a href="../index.html" class="menu-item-cercle"></a>
+            <a href="../index.html" class="menu-item-cercle"></a>
+            <a href="../index.html" class="menu-item-cercle"></a>
+            <a href="../index.html" class="menu-item-cercle"></a>
+            <a href="../index.html" class="menu-item-cercle"></a>
+        </div>
+    </nav>
+
+    <svg class="hide-svg" width="200" height="40">
+        <rect width="200" height="40" fill="rgba(var(--color-background)" />
+    </svg>
+
+    <div class="main">
+        <!-- Contenu principal -->
+
+        <!-- Barre de personnalisation -->
+        <div class="toolbar">
+            <div id="bouton-personnalisation">
+                <button id="light-dark-btn"></button>
+
+                <button id="lang-switch"></button>
+
+                <div id="color-selector">
+                    <label for="color-toggle" class="color-button"></label>
+                    <input type="checkbox" id="color-toggle" style="display:none;">
+                    <div class="dropdown">
+                        <div data-i18n="nav_theme1" class="color-option" data-theme="default">Chaleur du Crépuscule </div>
+                        <div data-i18n="nav_theme2" class="color-option" data-theme="theme1">Brise d'Automne</div>
+                        <div data-i18n="nav_theme3" class="color-option" data-theme="theme2">Rêve de Lavande</div>
+                        <div data-i18n="nav_theme4" class="color-option" data-theme="theme3">Forêt Tropicale</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CV -->
+        <section id="documents">
+            <h1 data-i18n="documents_title">CV</h1>
+            <p data-i18n="documents_text">N'hésitez pas à consulter mon CV si vous êtes intéressé(e) !</p>
+            <a id="boutonCV" class="btn" href="#" download>
+                <span data-i18n="documents_button">Mon CV</span>
+            </a>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-haut">
+                <p>&copy; 2025 - Enzo Jouve</p>
+                <div class="mail">
+                    <a href="mailto:enzo.jouve@etu.uca.fr" target="_blank"
+                        rel="noopener noreferrer">enzo.jouve@etu.uca.fr</a>
+                </div>
+            </div>
+            <div class="footer-bas">
+                <p data-i18n="footer_comeback">Mon site est en cours de construction, n'hésitez pas à revenir plus tard
+                    !</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/language.js"></script>
+
+</body>
+
+</html>

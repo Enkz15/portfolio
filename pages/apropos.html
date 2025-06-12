@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enzo Jouve</title>
+    <script src="../scripts/fasterThemeLoader.js"></script>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/apropos.css">
+</head>
+
+<body>
+    <nav>
+        <div class="menu-container-gauche">
+            <a data-i18n="nav_apropos" href="./apropos.html" class="menu-item-gauche">A propos</a>
+            <a data-i18n="nav_cursus" href="./cursus.html" class="menu-item-gauche">Cursus</a>
+            <a data-i18n="nav_savoir" href="./savoir.html" class="menu-item-gauche">Savoir</a>
+            <a data-i18n="nav_projets" href="./projets.html" class="menu-item-gauche">Projets</a>
+            <a data-i18n="nav_documents" href="./documents.html" class="menu-item-gauche">CV</a>
+        </div>
+        <div class="menu-container-haut">
+            <a data-i18n="nav_apropos" href="./apropos.html" class="menu-item-haut">A propos</a>
+            <a data-i18n="nav_cursus" href="./cursus.html" class="menu-item-haut">Cursus</a>
+            <a data-i18n="nav_savoir" href="./savoir.html" class="menu-item-haut">Savoir</a>
+            <a data-i18n="nav_projets" href="./projets.html" class="menu-item-haut">Projets</a>
+            <a data-i18n="nav_documents" href="./documents.html" class="menu-item-haut">CV</a>
+        </div>
+        <div class="menu-container-cercle">
+            <a href="../index.html" class="menu-item-cercle"></a>
+            <a href="../index.html" class="menu-item-cercle"></a>
+            <a href="../index.html" class="menu-item-cercle"></a>
+            <a href="../index.html" class="menu-item-cercle"></a>
+            <a href="../index.html" class="menu-item-cercle"></a>
+        </div>
+    </nav>
+
+    <svg class="hide-svg" width="200" height="40">
+        <rect width="200" height="40" fill="rgba(var(--color-background)" />
+    </svg>
+
+    <div class="main">
+        <!-- Contenu principal -->
+
+        <!-- Barre de personnalisation -->
+        <div class="toolbar">
+            <div id="bouton-personnalisation">
+                <button id="light-dark-btn"></button>
+
+                <button id="lang-switch"></button>
+
+                <div id="color-selector">
+                    <label for="color-toggle" class="color-button"></label>
+                    <input type="checkbox" id="color-toggle" style="display:none;">
+                    <div class="dropdown">
+                        <div data-i18n="nav_theme1" class="color-option" data-theme="default">Chaleur du Crépuscule
+                        </div>
+                        <div data-i18n="nav_theme2" class="color-option" data-theme="theme1">Brise d'Automne</div>
+                        <div data-i18n="nav_theme3" class="color-option" data-theme="theme2">Rêve de Lavande</div>
+                        <div data-i18n="nav_theme4" class="color-option" data-theme="theme3">Forêt Tropicale</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- A propos -->
+        <section id="apropos">
+            <h1 data-i18n="apropos_title">A propos de moi</h1>
+
+            <div class="row-apropos">
+                <div class="info-apropos texte">
+                    <h2 class="hello">
+                        <span data-i18n="apropos_hello"></span><span class="name" data-i18n="apropos_enzojouve">Enzo
+                            Jouve</span>
+                    </h2>
+
+                    <h3 data-i18n="apropos_profession" class="my-profession">
+                        Je suis étudiant en informatique.
+                    </h3>
+
+                    <p data-i18n="apropos_text">Depuis septembre 2024, j'ai rejoint la formation BUT Informatique à
+                        Aubière (63170) en tant qu'étudiant de première année. </p>
+                    <img src="../images/logo_uca.png" Style="height: 15em; width: auto; border: none; border-radius: 10%;"
+                        alt="Logo de l'UCA">
+                    <p data-i18n="apropos_text2">Au cours de mon parcours, j'ai développé des compétences en
+                        programmation, réseau, gestion de
+                        systèmes et
+                        bases de données. </p>
+                    <p data-i18n="apropos_text3">Créatif, patient, organisé et ouvert d’esprit, je m'investis
+                        pleinement dans ma formation pour
+                        enrichir mon savoir-faire. </p>
+
+                    <div class="img-skill creative" title="Créatif"></div>
+                    <div class="img-skill patience" title="Patient"></div>
+                    <div class="img-skill organized" title="Organisé"></div>
+                    <div class="img-skill openminded" title="Ouvert d’esprit"></div>
+
+
+                    <p data-i18n="apropos_text4">Je suis actuellement en recherche d'une alternance pour septembre 2025.
+                        Mon objectif est de
+                        débuter par une période de 3 mois en entreprise à compter de mi-novembre, puis alterner avec 3
+                        mois à l'école, sur 2 ans. Cette expérience me
+                        permettra de renforcer mes compétences techniques et d'acquérir une expertise professionnelle
+                        précieuse pour accompagner l'obtention de mon BUT.</p>
+                </div>
+                <div class="info-apropos image">
+                    <img src="../images/enzojouve.jpg" alt="Photo de moi">
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-haut">
+                <p>&copy; 2025 - Enzo Jouve</p>
+                <div class="mail">
+                    <a href="mailto:enzo.jouve@etu.uca.fr" target="_blank"
+                        rel="noopener noreferrer">enzo.jouve@etu.uca.fr</a>
+                </div>
+            </div>
+            <div class="footer-bas">
+                <p data-i18n="footer_comeback">Mon site est en cours de construction, n'hésitez pas à revenir plus tard
+                    !</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/language.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+:root {
+    --Creative: url('../images/creativity-white.png');
+    --Patience : url('../images/time-white.png');
+    --Organized: url('../images/orga-white.png');
+    --Openminded: url('../images/om-white.png');
+}
+
+.img-skill {
+    width: 7em;
+    height: 7em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: inline-block;
+    margin-right: 1em;
+    border: none;
+}
+
+.creative {
+    background-image: var(--Creative);
+}
+
+.patience {
+    background-image: var(--Patience);
+}
+
+.organized {
+    background-image: var(--Organized);
+}
+
+.openminded {
+    background-image: var(--Openminded);
+}
+
+
+.row-apropos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.row-apropos .texte {
+    flex: 1;
+    min-width: 250px;
+    max-width: 50%;
+}
+
+.row-apropos .image {
+    flex-shrink: 0;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-apropos .hello,
+.row-apropos .my-profession {
+    font-size: 24px;
+    margin: 1em 0;
+}
+
+.row-apropos .name {
+    font-weight: bold;
+    color: rgba(var(--color3));
+}
+
+.row-apropos .typing {
+    font-weight: bold;
+    color: rgba(var(--color2));
+}
+
+.row-apropos p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: rgba(var(--color-text));
+    margin-bottom: 1em;
+    width: 100%;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.row-apropos img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    border: 4mm ridge rgba(var(--color3));
+}
+
+.row-apropos .image {
+    position: relative;
+    flex-shrink: 0;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ******************************* Responsive **************************** */
+@media screen and (max-width: 1024px) {
+    #apropos h1 {
+        font-size: 4.5em; 
+    }
+
+    .row-apropos {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .row-apropos .texte,
+    .row-apropos .image {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #apropos h1 {
+        font-size: 3.5em; 
+    }
+
+    .row-apropos {
+        gap: 1rem; 
+    }
+
+    .row-apropos .texte {
+        max-width: 90%;
+        text-align: justify;
+    }
+
+    .row-apropos .image {
+        width: 90%;
+    }
+
+    .row-apropos p {
+        font-size: 1em; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #apropos h1 {
+        font-size: 2.5em; 
+    }
+
+    .row-apropos .texte,
+    .row-apropos .image {
+        max-width: 100%;
+    }
+
+    .row-apropos p {
+        font-size: 0.9em;
+    }
+}
